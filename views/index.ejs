@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+</head>
+<body>
+    <h1>images posted</h1>
+    <a href="../uploads/upload.ejs">upload image</a>
+    <div>
+        <% files.forEach(file => { %>
+            <img src="<%= file %>" alt="Image" style="width: 200px; height: auto;">
+        <% }) %>
+    </div>
+</body>
+</html>

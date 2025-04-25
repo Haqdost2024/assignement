@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upload image</title>
+</head>
+<body>
+    <h1>upload image</h1>
+    <form action="../uploads/upload.ejs" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">upload</button>
+    </form>
+    <a href="/">go to home page</a>
+</body>
+</html>
